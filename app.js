@@ -49,3 +49,8 @@ window.onload = function() {
     var deadline = new Date("April 1, 2022 2:15:00");
     startTimer("clock", deadline);
 };
+
+
+let aud = document.getElementById('mp');
+
+aud.volume = 0.2;
