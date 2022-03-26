@@ -78,12 +78,12 @@
         }
     }
     
-    @media only screen and (max-width:567px) {
+    @media only screen and (max-width:768px) {
         .logo {
-            width: 450px;
+            width: 400px;
             position: relative;
             margin: 0 auto;
-            left: 20px;
+            left: -8px;
         }
         body {
             background: #F8F8F8;
@@ -93,30 +93,31 @@
         h2 {
             color: #00282F;
             text-align: center;
-            font-size: 1em;
+            font-size: 18px;
             letter-spacing: 2px;
             text-transform: uppercase;
-            width: 480px;
+            width: 420px;
             margin: 15px auto;
             /* background: #000; */
             position: relative;
-            left: -34px;
+            left: -76px;
         }
         #geeks-countdown {
-            width: 550px;
+            width: 500px;
             margin: 10% auto;
             background: transparent;
         }
         #clock span {
             float: left;
             text-align: center;
-            font-size: 64px;
-            margin: 0 10px;
+            font-size: 60px;
+            margin: 0 5px;
             color: #00282F;
             padding: 20px;
             width: 17%;
             border-radius: 20px;
             box-sizing: border-box;
+            /* background: #000; */
         }
         #clock:after {
             content: "";
@@ -127,16 +128,98 @@
             background: transparent;
             width: 100%;
             height: 200px;
+            /* background: #000; */
+            position: relative;
+            left: -8px;
         }
         #units span {
             float: left;
-            width: 22%;
+            width: 19%;
             text-align: center;
             margin-top: 30px;
             color: #00282F;
             text-transform: uppercase;
             font-size: 13px;
             letter-spacing: 2px;
+            font-weight: 600;
+        }
+        span.turn {
+            animation: turn 1s ease forwards;
+        }
+        @keyframes turn {
+            0% {
+                transform: rotateY(360deg)
+            }
+            100% {
+                transform: rotateY(0deg)
+            }
+        }
+    }
+    
+    @media only screen and (max-width:576px) {
+        .logo {
+            width: 400px;
+            position: relative;
+            margin: 0 auto;
+            left: -8px;
+        }
+        body {
+            background: #F8F8F8;
+            background-color: #F8F8F8;
+            background-image: url("./Noise.svg");
+        }
+        h2 {
+            color: #00282F;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            width: 420px;
+            margin: 15px auto;
+            /* background: #000; */
+            position: relative;
+            left: -56px;
+        }
+        #geeks-countdown {
+            width: 500px;
+            margin: 10% auto;
+            background: transparent;
+        }
+        #clock span {
+            float: left;
+            text-align: center;
+            font-size: 60px;
+            margin: 0 5px;
+            color: #00282F;
+            padding: 20px;
+            width: 17%;
+            border-radius: 20px;
+            box-sizing: border-box;
+            /* background: #000; */
+        }
+        #clock:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #units {
+            background: transparent;
+            width: 100%;
+            height: 200px;
+            /* background: #000; */
+            position: relative;
+            left: -8px;
+        }
+        #units span {
+            float: left;
+            width: 19%;
+            text-align: center;
+            margin-top: 30px;
+            color: #00282F;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: 600;
         }
         span.turn {
             animation: turn 1s ease forwards;
